@@ -6,3 +6,5 @@
 (require 'backup)
 (require 'misc)
 (eval-after-load 'ido '(require 'setup-ido))
+
+(byte-recompile-directory user-emacs-directory 0)
