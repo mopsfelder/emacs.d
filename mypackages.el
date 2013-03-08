@@ -22,6 +22,7 @@
                       paredit
                       pcache
                       projectile
+                      pymacs
                       python
                       python-mode
                       rainbow-delimiters
