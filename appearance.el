@@ -19,8 +19,8 @@
 (column-number-mode 1)
 
 
-;; Justify paragraphs at 72 characters
-(setq-default fill-column 72)
+;; Justify paragraphs at 80 characters
+(setq-default fill-column 80)
 
 
 ;; Font
