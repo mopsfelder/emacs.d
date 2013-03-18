@@ -81,8 +81,24 @@
 
 ;; Indentation
 
-;; Disable tab character and replace it by spaces
-(setq-default indent-tabs-mode nil)
+;; Customizations for all of c-mode, c++-mode, objc-mode, java-mode
+(defun my-code-indentation ()
+  (c-set-offset 'substatement-open 0)
+
+  (setq-default c-default-style "linux")
+  (setq-default c-block-comment-prefix "* ")
+  (setq-default c++-tab-always-indent t)
+  (setq-default c-basic-offset 4)
+  (setq-default c-indent-level 4)
+
+  (setq-default sh-basic-offset 8)
+
+  (setq-default tcl-indent-level 8)
+
+  (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
+  (setq tab-width 8)
+  (setq indent-tabs-mode t))
+(add-hook 'c-mode-common-hook 'my-code-indentation)
 
 
 ;; Delete trailing whitespaces when save file
