@@ -98,7 +98,7 @@
   (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
   (setq tab-width 8)
   (setq indent-tabs-mode t))
-(add-hook 'c-mode-common-hook 'my-code-indentation)
+(add-hook 'prog-mode-hook 'my-code-indentation)
 
 
 ;; Delete trailing whitespaces when save file
