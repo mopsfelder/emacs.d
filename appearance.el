@@ -87,9 +87,8 @@
 
   (setq-default c-default-style "linux")
   (setq-default c-block-comment-prefix "* ")
-  (setq-default c++-tab-always-indent t)
-  (setq-default c-basic-offset 4)
-  (setq-default c-indent-level 4)
+  (setq-default c-basic-offset 8)
+  (setq-default c-indent-level 8)
 
   (setq-default sh-basic-offset 8)
 
