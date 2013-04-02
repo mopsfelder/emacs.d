@@ -31,6 +31,7 @@
                       solarized-theme
                       volatile-highlights
                       yasnippet
+                      yasnippet-bundle
                       zenburn-theme
                       )
   "A list of packages to ensure are installed at launch.")
