@@ -69,6 +69,12 @@
 (global-whitespace-mode 1)
 
 
+;; Cursor
+(blink-cursor-mode 0)
+(set-face-background 'cursor "green")
+(setq-default cursor-type 'hbar)
+
+
 ;; Highlight current line
 (global-hl-line-mode 1)
 
