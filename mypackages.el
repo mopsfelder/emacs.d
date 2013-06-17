@@ -13,6 +13,8 @@
                       auto-complete
                       autopair
                       expand-region
+                      eieio
+                      tabulated-list
                       gh
                       gist
                       idle-highlight-mode
