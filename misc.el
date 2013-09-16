@@ -99,4 +99,14 @@
 (cua-mode 1)
 
 
+;; Auto insert close bracket pairs
+;; http://ergoemacs.org/emacs/emacs_insert_brackets_by_pair.html
+(electric-pair-mode 1)
+(setq electric-pair-pairs '(
+                            (?\" . ?\")
+                            (?\' . ?\')
+                            (?\{ . ?\})
+                            ))
+
+
 (provide 'misc)
