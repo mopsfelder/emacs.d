@@ -109,4 +109,9 @@
                             ))
 
 
+;; Highlight matching pairs of parentheses and other characters
+(show-paren-mode 1)
+(setq show-paren-style 'expression)
+
+
 (provide 'misc)
