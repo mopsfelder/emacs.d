@@ -95,4 +95,8 @@
 (require 'iso-transl)
 
 
+;; Enable CUA mode to have standard keys for Copy & Paste
+(cua-mode 1)
+
+
 (provide 'misc)
