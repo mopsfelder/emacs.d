@@ -1,10 +1,12 @@
-(add-to-list 'load-path user-emacs-directory)
+;; configuration directory, say ~/.emacs.d
+(defvar conf-dir (file-name-directory load-file-name))
 
-(require 'mypackages)
-(require 'task-mgmt)
-(require 'appearance)
-(require 'backup)
-(require 'misc)
-(eval-after-load 'ido '(require 'setup-ido))
+;; directory housing configuration files to be loaded
+(defvar personal-dir (expand-file-name "personal" conf-dir))
 
-(byte-recompile-directory user-emacs-directory 0)
+;; directory housing files to be loaded before others
+(defvar personal-preload-dir (expand-file-name "preload" personal-dir))
+
+;; load personal settings
+(mapc 'load (directory-files personal-preload-dir 't "^[^#].*el$"))
+(mapc 'load (directory-files personal-dir 't "^[^#].*el$"))

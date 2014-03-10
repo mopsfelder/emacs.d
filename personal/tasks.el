@@ -2,6 +2,12 @@
 
 (require 'org)
 
+;; Faces for TODO keywords
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning) ("STARTED" . "yellow")
+	("WAITING" . (:foreground "orange" :weight bold))
+	("KNOWNISSUE" . (:forground "yellow" :weight bold))))
+
 ;; Set my main gtd file
 (defvar gtd-file
   (quote "~/Documents/gtd/gtd.org")
@@ -9,6 +15,10 @@
 
 ;; Specify which files store tasks
 (add-to-list 'org-agenda-files gtd-file)
+
+; Targets include this file and any file contributing to the agenda - up to 9 levels deep
+(setq org-refile-targets (quote ((nil :maxlevel . 9)
+                                 (org-agenda-files :maxlevel . 9))))
 
 ;; Show blocked items in a dimmed font
 (setq org-agenda-dim-blocked-tasks t)
