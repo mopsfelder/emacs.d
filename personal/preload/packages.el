@@ -8,7 +8,11 @@
   (package-refresh-contents))
 
 ;; list of packages to be installed
-(defvar my-packages '(fill-column-indicator zenburn-theme))
+(defvar my-packages '(fill-column-indicator
+		      python-mode
+		      python-pep8
+		      python-pylint
+		      zenburn-theme))
 
 ;; install packages if not installed yet
 (dolist (p my-packages)
