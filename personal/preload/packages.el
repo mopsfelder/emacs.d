@@ -9,7 +9,8 @@
   (package-refresh-contents))
 
 ;; list of packages to be installed
-(defvar my-packages '(fill-column-indicator
+(defvar my-packages '(auto-complete
+		      fill-column-indicator
 		      magit
 		      python-mode
 		      python-pep8
