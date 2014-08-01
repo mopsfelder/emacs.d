@@ -12,9 +12,6 @@
 (defvar my-packages '(auto-complete
 		      fill-column-indicator
 		      magit
-		      python-mode
-		      python-pep8
-		      python-pylint
 		      zenburn-theme))
 
 ;; install packages if not installed yet
