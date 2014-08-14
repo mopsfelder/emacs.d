@@ -7,6 +7,9 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; display line and column numbers
+(setq column-number-mode 't)
+
 ;; function to set window size according to screen resolution
 (defun set-frame-size-according-to-resolution()
   (interactive)
