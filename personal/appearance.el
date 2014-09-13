@@ -36,5 +36,9 @@
 ;; set font
 (add-to-list 'default-frame-alist '(font . "Inconsolata-10"))
 
+;; adjust font size
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
+
 ;; color theme
 (load-theme 'zenburn t)
