@@ -1,6 +1,6 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/"))
+	     '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
 (when (not package-archive-contents)
