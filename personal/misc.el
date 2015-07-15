@@ -13,3 +13,6 @@
 (setq scroll-step 1)
 (setq hscroll-margin 10)
 (setq hscroll-step 1)
+
+;; ignore case when opening files with C-x C-f
+(setq read-file-name-completion-ignore-case 't)
