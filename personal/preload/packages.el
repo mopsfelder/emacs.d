@@ -10,6 +10,7 @@
 (defvar my-packages '(auto-complete
 		      fill-column-indicator
 		      magit
+                      yaml-mode
 		      zenburn-theme))
 
 ;; install packages if not installed yet
