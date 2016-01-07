@@ -9,6 +9,7 @@
 ;; list of packages to be installed
 (defvar my-packages '(auto-complete
 		      fill-column-indicator
+		      helm
 		      magit
                       yaml-mode
 		      zenburn-theme))
