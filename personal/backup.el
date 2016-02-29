@@ -11,7 +11,12 @@
 (setq auto-save-default nil)
 
 
-;; Save cursor position when saving files
-(require 'saveplace)
+;; Remember cursor position
+(unless (file-exists-p savefile-dir)
+  (make-directory savefile-dir))
 (setq save-place-file (expand-file-name "places" savefile-dir))
-(setq-default save-place t)
+(if (version< emacs-version "25.0")
+    (progn
+      (require 'saveplace)
+      (setq-default save-place t))
+  (save-place-mode 1))
