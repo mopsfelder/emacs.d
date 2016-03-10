@@ -41,5 +41,11 @@
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
+;; adjust window sizes
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
+
 ;; color theme
 (load-theme 'zenburn t)
