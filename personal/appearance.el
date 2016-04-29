@@ -34,6 +34,10 @@
 (setq fci-rule-column 80)
 (add-hook 'after-change-major-mode-hook 'fci-mode)
 
+;; highlight current line
+(when window-system
+  (global-hl-line-mode))
+
 ;; set font
 (add-to-list 'default-frame-alist '(font . "Inconsolata-10"))
 
