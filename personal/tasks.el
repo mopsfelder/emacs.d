@@ -72,6 +72,8 @@
             (global-set-key (kbd "<f12>") 'org-clock-out)
             ))
 
+(setq org-hide-leading-stars t)
+
 ;; Make the some shortcuts available during org-agenda-mode
 (add-hook 'org-agenda-mode-hook
           (lambda ()
