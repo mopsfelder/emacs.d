@@ -74,6 +74,8 @@
 
 (setq org-hide-leading-stars t)
 
+(setq org-ellipsis "⤵")
+
 ;; Make the some shortcuts available during org-agenda-mode
 (add-hook 'org-agenda-mode-hook
           (lambda ()
