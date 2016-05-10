@@ -51,5 +51,8 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;; toggle full screen
+(global-set-key [F11] 'toggle-frame-fullscreen)
+
 ;; color theme
 (load-theme 'zenburn t)
