@@ -1,6 +1,6 @@
 ;; This must come before configuration of installed packages.
 (require 'package)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (package-initialize)
 
 (when (not package-archive-contents)
