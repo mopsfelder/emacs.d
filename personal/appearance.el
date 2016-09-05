@@ -39,7 +39,7 @@
   (global-hl-line-mode))
 
 ;; set font
-(add-to-list 'default-frame-alist '(font . "Inconsolata-10"))
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono 11"))
 
 ;; adjust font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
