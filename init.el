@@ -11,6 +11,7 @@
 		      fill-column-indicator
 		      helm
 		      magit
+		      markdown-mode
                       yaml-mode
 		      zenburn-theme))
 
